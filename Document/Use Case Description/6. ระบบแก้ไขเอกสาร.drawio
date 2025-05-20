@@ -1,0 +1,64 @@
+<mxfile host="Electron" modified="2023-12-25T09:09:39.279Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="C49kLUK1ERPZHLxQpNIJ" version="22.1.2" type="device">
+  <diagram name="Page-1" id="OFJM7V-xodq8CG4FgT4N">
+    <mxGraphModel dx="1418" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GK5NCBHF9g9axfspYK10-67" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="40" y="160" width="760" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="GK5NCBHF9g9axfspYK10-1" value="เจ้าหน้าที่" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="410" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GK5NCBHF9g9axfspYK10-15" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="200" width="520" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="GK5NCBHF9g9axfspYK10-16" value="ระบบค้นหาเอกสาร" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="405" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GK5NCBHF9g9axfspYK10-18" value="Login" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="300" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GK5NCBHF9g9axfspYK10-65" value="แก้ไขเอกสาร" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="595" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gvZjyx77qGyK2Q88v1IP-1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="GK5NCBHF9g9axfspYK10-16" target="GK5NCBHF9g9axfspYK10-18" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="435" y="375" as="sourcePoint" />
+            <mxPoint x="435" y="305" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gvZjyx77qGyK2Q88v1IP-20" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="GK5NCBHF9g9axfspYK10-1" target="GK5NCBHF9g9axfspYK10-65" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="370" as="sourcePoint" />
+            <mxPoint x="380" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gvZjyx77qGyK2Q88v1IP-40" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="qUkRi5wf5P4TWrqGnxE7-1" target="GK5NCBHF9g9axfspYK10-65" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="640" as="sourcePoint" />
+            <mxPoint x="484" y="364" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Al-hQzrkB7MnHjv1-7x-1" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="GK5NCBHF9g9axfspYK10-1" target="GK5NCBHF9g9axfspYK10-18" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="370" as="sourcePoint" />
+            <mxPoint x="380" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qUkRi5wf5P4TWrqGnxE7-1" value="ระบบแก้ไขเอกสาร" style="ellipse;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="505" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qUkRi5wf5P4TWrqGnxE7-2" value="&amp;lt;&amp;lt;extends&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="qUkRi5wf5P4TWrqGnxE7-1" target="GK5NCBHF9g9axfspYK10-16">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="435" y="435" as="sourcePoint" />
+            <mxPoint x="435" y="375" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

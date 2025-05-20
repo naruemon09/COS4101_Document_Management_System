@@ -1,0 +1,54 @@
+{% extends 'navbar.html' %}
+{% load static %}
+
+{% block content%}
+<h1 style="color: white;">ค้นหาเอกสาร</h1>
+<form class="form" style="padding-left: 200px;padding-right: 200px;">
+        <form action="{% url 'search' %}" style="max-width:500px;margin:auto">
+        <div class="input-container">  
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>เลขทะเบียน</th>
+                    <th>วันที่</th>
+                    <th>เรื่อง</th>
+                    <th>จาก</th>
+                    <th>ถึง</th>
+                    <th>ประเภทเอกสาร</th>
+                    <th>รับ/ส่ง</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                {% for document in documents %}
+                <tr style="background-color: white;">
+                    <td>
+                        <a>{{document.documentID}}</a>
+
+                    </td>
+                    <td>{{document.date}}</td>
+                    <td>{{document.subject}}</td>
+                    <td>{{document.sender}}</td>
+                    <td>{{document.recipient}}</td>
+                    <td>{{document.type}}</td>
+                    <td>
+                        {% if document.received %}
+                            receive
+                        {% else %}
+                            send
+                        {% endif %}
+                    </td>
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+        </div>
+        </form>
+
+        <div align="right" style="padding-top: 1%; padding-left: 200px;padding-right: 200px;" >
+            <a href="{% url 'menu' %}" ><button type="submit" class="bta">กลับ</button></a>
+        </div> 
+        
+</form>
+
+{% endblock %}

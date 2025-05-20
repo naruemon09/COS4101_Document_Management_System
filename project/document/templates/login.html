@@ -1,0 +1,39 @@
+{% extends 'layouts.html' %}
+{% load static %}
+
+{% block content %}
+
+<h1 style="color: white; font-size: 30px;">ระบบรับ - ส่งเอกสาร</h1>
+<h2 style="color: white; font-size: 20px;">ภาควิทยาการคอมพิวเตอร์ มหาวิทยาลัยรามคำแหง</h2>
+    <div class="box" style="margin-top: -230px;">
+        <form action="#" method="POST" style="max-width:500px;margin:auto">
+            {% csrf_token %}
+            <div class="imgcontainer">
+                <img src="{% static 'login.png' %}" class="avatar">
+            </div>
+            <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input class="input-field" type="text" placeholder="Username" name="username">
+            </div>
+            
+            <div class="input-container">
+                <i class="fa fa-lock icon"></i>
+                <input class="input-field" type="password" placeholder="Password" name="password">
+            </div>
+
+            <!-- link to forgot password -->
+            <div class="forgot">
+                <a href="{% url 'forgetPassword' %}">Forgot Password</a>
+            </div>
+            
+            <button type="submit" class="btn">LOGIN</button>
+
+            <div class="register">
+                <a href="#">Don't have an account yet? Please contract admin</a>
+            </div>
+
+            
+        </form>
+    </div>
+
+{% endblock %}

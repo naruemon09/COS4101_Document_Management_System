@@ -1,0 +1,29 @@
+{% extends 'navbar.html' %}
+{% load static %}
+
+{% block content%}
+<h1 style="color: white;">เอกสารเลขที่...</h1>
+<form class="form" style="padding-left: 200px;padding-right: 200px;">
+    <body>
+        <form action="#" style="max-width:500px;margin:auto">
+            <div class="input-container">  
+                <table id="table">
+                    <tr>
+                        <th>เลขทะเบียน</th>
+                        <th>วันที่</th>
+                        <th>เรื่อง</th>
+                        <th>จาก</th>
+                        <th>ถึง</th>
+                        <th>ประเภท</th>
+                    </tr>
+                </table>
+            </div>
+        </form>
+            <div align="right" style="padding-right: 130px; padding-top: 30%; ">
+                <a href="{% url 'send' %}" ><button type="submit" class="bta">แก้ไข</button></a>
+                <a href="{% url 'search' %}"><button type="submit" class="bta">กลับ</button></a>
+            </div>  
+
+    </body>
+</form>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'navbar.html' %}
+{% load static %}
+
+{% block content%}
+<a href="{% url 'receive' %}" >
+<button  class="menubox btn" style="left: 30%;">
+    <div class="imgcontainer" >
+        <img src="{% static 'receive.png' %}" class="avatar" style="width: 90%; margin-top: -30%;">
+        <p style="font-size: 23px;margin-top: 0%;">บันทึกเอกสารรับ</p>
+    </div>   
+</button>
+</a>
+
+<a href="{% url 'send' %}" >
+<button class="menubox btn"  style="left: 50%;">
+    <div class="imgcontainer" >
+        <img src="{% static 'send.png' %}" class="avatar" style="width: 120%; margin-top: -30%;">
+        <p style="font-size: 23px;margin-top: 5%;">บันทึกเอกสารส่ง</p>
+    </div> 
+</button>
+</a>
+
+<a href="{% url 'search' %}" >
+<button class="menubox btn"  style="left: 70%;">
+    <div class="imgcontainer" >
+        <img src="{% static 'search.png' %}" class="avatar" style="width: 100%; margin-top: -30%;">
+        <p style="font-size: 23px;margin-top: 5%;">ค้นหาเอกสาร</p>
+    </div> 
+</button>
+</a>
+{% endblock %}

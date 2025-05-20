@@ -1,0 +1,71 @@
+{% extends 'navbar.html' %}
+{% load static %}
+
+{% block content%}
+<h1 style="color: white;">บันทึกการส่งเอกสาร</h1>
+<form action="{% url 'send' %}" method="post" class="form" enctype="multipart/form-data" style="padding-left: 200px;padding-right: 200px;">
+    {% csrf_token %}
+    <body>
+    <div style="max-width:1000px;margin:auto">
+        <div class="input-container">
+            <input name="subject" class="input-field" type="text" placeholder="ชื่อเรื่อง">
+            <input name="documentID" class="input-field" type="text" placeholder="เลขทะเบียนส่ง">
+        </div>
+        <div class="input-container">
+            <input name="sender" class="input-field" type="text" placeholder="ผู้ส่ง">
+        </div>
+        <div class="input-container">
+            <input name="recipient" class="input-field" type="text" placeholder="ผู้รับ">
+        </div>
+        <div class="input-container">
+            <input name="status" class="input-field" type="text" placeholder="การปฎิบัติ">
+
+            <body onload=addOption_list5();>
+                <div class="dropdown" style="margin: 0 10px 0 0; width: 40%;">
+                    <select name="type" id="selectType" class="dropdown-select">
+                        <option>ประเภทเอกสาร</option>
+                    </select>
+                </div>
+            </body>
+        </div>
+
+        <div class="input-container" style="padding-right: 10px;">
+            <input name="annotation" class="input-field" type="text" placeholder="หมายเหตุ">
+            <div class="input_container">
+                <input name="fileDocument" type="file" id="fileUpload">
+            </div>
+        </div>
+    </div>
+    <body>
+    <div class="input-container" style="max-width:1000px;margin:auto">
+
+        <body onload=addOption_list1();>
+            <div name="drop_list">
+                <div class="dropdown" style="margin: 0 10px 0 0; width: 320px;">
+                    <select NAME="dt_day" id="dt_day" class="dropdown-select">
+                        <option>วัน</option>
+                    </select>
+                </div>
+
+                <div class="dropdown" style="margin: 0 10px 0 0; width: 320px;">
+                    <select NAME="dt_month" id="dt_month"  class="dropdown-select">
+                        <option>เดือน</option>
+                    </select>
+                </div>
+
+                <div class="dropdown" style="margin: 0 10px 0 0; width: 320px;">
+                    <select NAME="dt_year" id="dt_year"  class="dropdown-select">
+                        <option>ปี</option>
+                    </select>
+                </div>
+            </div>
+        </body>
+    </div>
+
+    <div align="right" style="padding-right: 130px; padding-top: 1%;">
+        <a href="#"><button type="submit" class="bta">บันทึก</button></a>
+        <a><button type="submit" name="cancel" class="bta">ยกเลิก</button></a>
+    </div>
+</form>
+
+{% endblock %}

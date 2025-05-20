@@ -1,0 +1,51 @@
+{% extends 'layouts.html' %}
+{% load static %}
+
+{% block content%}
+<div class="box" style="height: 630px; margin-top: -320px;">
+    <form action="register" method="post" style="max-width:500px;margin:auto">
+
+        {% csrf_token %}
+
+        <h1>ลงทะเบียน</h1>
+
+        <div class="input-container">  
+            <input class="input-field" type="text" placeholder="ชื่อ" name="firstName">
+            <input class="input-field" type="text" placeholder="นามสกุล" name="lastName">
+        </div>
+
+        <div class="input-container"> 
+            <input class="input-field" type="email" placeholder="อีเมล์" name="email">
+        </div>
+
+        <div class="input-container"> 
+            <input class="input-field" type="text" placeholder="เบอร์โทร" name="phone">
+        </div>
+
+        <div class="input-container"> 
+            <input class="input-field" type="text" placeholder="ชื่อผู้ใช้" name="username">
+        </div>
+
+        <div class="input-container"> 
+            <input class="input-field" type="password" placeholder="รหัสผ่าน" name="password">
+        </div>
+
+        <div class="input-container"> 
+            <input class="input-field" type="password" placeholder="ยืนยันรหัสผ่าน" name="repassword">
+        </div>
+
+        <div class="input-container"> 
+            <body onload=addOption_list4();>
+            <div class="dropdown" style="margin-left: 50%; left: -24%; width: 100%;">
+                <select id="selectPosition" class="dropdown-select" name="position">
+                    <option >ตำแหน่ง</option>
+                </select>
+            </div>
+            </body>
+        </div>
+
+        <button type="submit" class="btn">สมัครสมาชิก</button>
+        
+    </form> 
+</div>
+{% endblock %}
