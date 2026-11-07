@@ -1,13 +1,17 @@
+import os
+
+# Optional PostgreSQL settings. Enable by uncommenting
+# "from .db import *" in settings.py and setting these variables.
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'documentdb',
-        'USER': '6405003317',
-        'PASSWORD': 'Ngy6YMTV2tuF',
-        'HOST': 'ep-lucky-dawn-a126hqor.ap-southeast-1.aws.neon.tech',
-        'PORT': '5432',
-         'OPTIONS': {
-             'sslmode': 'require',
-        }
+        'NAME': os.environ.get('DB_NAME', 'documentdb'),
+        'USER': os.environ.get('DB_USER', ''),
+        'PASSWORD': os.environ.get('DB_PASSWORD', ''),
+        'HOST': os.environ.get('DB_HOST', ''),
+        'PORT': os.environ.get('DB_PORT', '5432'),
+        'OPTIONS': {
+            'sslmode': 'require',
+        },
     }
 }

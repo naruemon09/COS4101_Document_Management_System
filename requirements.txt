@@ -1,0 +1,3 @@
+Django==5.0.1
+# Needed only when using the PostgreSQL settings in project/project/db.py
+# psycopg2-binary

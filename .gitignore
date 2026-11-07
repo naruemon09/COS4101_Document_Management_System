@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# environment variables (keep secrets out of git)
+.env
+.env.*
+!.env.example
+
+# local database & collected static files
+db.sqlite3
+staticfiles/
+
+.DS_Store
+Thumbs.db
+.vscode/
